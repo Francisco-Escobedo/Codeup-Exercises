@@ -11,12 +11,18 @@ $userEnding = trim(fgets(STDIN));
 echo "Counting Increment: ";
 $userIncrement = trim(fgets(STDIN));
 
-if ($userIncrement == 0) {
-    for ($userStarting; $userStarting <= $userEnding; $userStarting +=1){
-    echo "$userStarting\n";
-    }
-} else {
-    for ($userStarting; $userStarting <= $userEnding; $userStarting += $userIncrement) {
+if ((is_numeric($userStarting) == true) && (is_numeric($userStarting) == true) && (is_numeric($userStarting) == true)){
+
+    if ($userIncrement == 0) {
+        for ($userStarting; $userStarting <= $userEnding; $userStarting +=1){
         echo "$userStarting\n";
+        }
+    } else {
+        for ($userStarting; $userStarting <= $userEnding; $userStarting += $userIncrement) {
+            echo "$userStarting\n";
+        }
     }
+
+} else { 
+    echo "Please ensure the three parameters are all numeric values.\n";
 }

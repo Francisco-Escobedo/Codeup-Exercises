@@ -23,9 +23,10 @@ $books = array(
     )
 );
 
-foreach ($books as $title) {
-    foreach ($title as $key => $info) {
-        echo "$books[$title] $key $info\n";
+foreach ($books as $title => $book) {
+    echo "$title\n";
+    foreach ($book as $description => $keyInfo) {
+        echo "$description $keyInfo\n";
     }
 
     echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";

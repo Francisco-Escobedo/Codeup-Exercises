@@ -1,5 +1,10 @@
 <?php
 
+// Global variables do not act the same here as they do in JavaScript. When outside a functions scope, a variable is its own entity.
+$a= 53;
+
+$b= 44;
+
 function add($a, $b)
 {
     return $a + $b;

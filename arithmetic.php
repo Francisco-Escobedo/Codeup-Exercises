@@ -20,7 +20,7 @@ function subtract($a, $b)
     if (is_numeric($a) && is_numeric($b)){
         return $a - $b;
     } else {
-        return "ERROR: Both arguments must be NUMBERS \n";
+        return "ERROR: Both arguments, \$a: $a and \$b: $b,  must be NUMBERS \n";
     }
 }
 
@@ -29,7 +29,7 @@ function multiply($a, $b)
     if (is_numeric($a) && is_numeric($b)){
         return $a * $b;
     } else {
-        return "ERROR: Both arguments must be NUMBERS \n";
+        return "ERROR: Both arguments, \$a: $a and \$b: $b, must be NUMBERS \n";
     }
 }
 
@@ -38,7 +38,7 @@ function divide($a, $b)
     if (is_numeric($a) && is_numeric($b) && $b !== 0){
         return $a / $b;
     } else {
-        return "ERROR: Both arguments must be NUMBERS \n The second argument may NOT be ZERO\n";
+        return "ERROR: Both arguments, \$a: $a and \$b: $b, must be NUMBERS \n The second argument may NOT be ZERO\n";
     }
 }
 
@@ -47,7 +47,7 @@ function modulus($a, $b)
     if (is_numeric($a) && is_numeric($b)){
         return $a % $b;
     } else {
-        return "ERROR: Both arguments must be NUMBERS \n";
+        return "ERROR: Both arguments, \$a: $a and \$b: $b, must be NUMBERS \n";
     }
 }
 

@@ -10,7 +10,7 @@ function add($a, $b)
     if (is_numeric($a) && is_numeric($b)){
         return $a + $b;
     } else {
-        return "ERROR: Both arguments must be NUMBERS \n";
+        echo throwErrorMessage($a, $b);
     }
     
 }
@@ -20,7 +20,7 @@ function subtract($a, $b)
     if (is_numeric($a) && is_numeric($b)){
         return $a - $b;
     } else {
-        return "ERROR: Both arguments, \$a: $a and \$b: $b,  must be NUMBERS \n";
+        echo throwErrorMessage($a, $b);
     }
 }
 
@@ -29,7 +29,7 @@ function multiply($a, $b)
     if (is_numeric($a) && is_numeric($b)){
         return $a * $b;
     } else {
-        return "ERROR: Both arguments, \$a: $a and \$b: $b, must be NUMBERS \n";
+        echo throwErrorMessage($a, $b);
     }
 }
 
@@ -47,8 +47,13 @@ function modulus($a, $b)
     if (is_numeric($a) && is_numeric($b)){
         return $a % $b;
     } else {
-        return "ERROR: Both arguments, \$a: $a and \$b: $b, must be NUMBERS \n";
+        echo throwErrorMessage($a, $b);
     }
+}
+
+function throwErrorMessage($a, $b)
+{
+    return "ERROR: Both arguments, \$a: $a and \$b: $b, must be NUMBERS \n";
 }
 
 // Add code to test your functions here

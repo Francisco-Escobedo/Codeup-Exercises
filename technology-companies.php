@@ -45,5 +45,21 @@ $companies = [
     ]
 ];
 
-ksort($companies);
-print_r($companies);
+foreach($companies as $company => $employee){
+
+    $amount = count($employee);
+    asort($employee);
+    echo"$company\n";
+    echo "Number of Employees: $amount\n";
+    print_r($employee);
+    
+
+}
+
+
+
+
+// print_r($companies);
+
+
+

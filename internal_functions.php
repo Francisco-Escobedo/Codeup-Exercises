@@ -24,7 +24,11 @@ function inspect($var){
             return " The string is $var";
         }
     } elseif (is_array($var)) {
-        if 
+        if  (empty($var)) {
+            return " The value is an empty array";
+        } else {
+            return " The value is an array";
+        }
     }
 }
 
@@ -61,6 +65,6 @@ echo 'Inspecting $string1:'. inspect($string1) . PHP_EOL;
 
 echo 'Inspecting $string2:'. inspect($string2) . PHP_EOL;
 
-// echo 'Inspecting $array1:'. inspect($array1) . PHP_EOL;
+echo 'Inspecting $array1:'. inspect($array1) . PHP_EOL;
 
-// echo 'Inspecting $array2:'. inspect($array2) . PHP_EOL;
+echo 'Inspecting $array2:'. inspect($array2) . PHP_EOL;

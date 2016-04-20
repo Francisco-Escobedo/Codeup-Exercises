@@ -47,21 +47,25 @@ $companies = [
 
 // SORT BY NUMBER OF EMPLOYEES AT COMPANY.
 
-foreach($companies as $company => $employee){
+// foreach($companies as $company => $employee){
 
-    $amount = count($employee);
-    asort($employee);
-    echo"$company\n";
-    echo "Number of Employees: $amount\n";
-    print_r($employee);
-    
+//     $amount = count($employee);
+//     sort($employee);
+//     echo"$company\n";
+//     echo "Number of Employees: $amount\n";
+//     print_r($employee);
+//     echo "====================\n";
 
+// }
+
+foreach($companies as $companyName => $employees){
+    sort ($employees);
+    sort(count($employees));
+    $companies[$companyName] = $employees;
+    echo "=====================\n";
 }
 
-
-
-
-// print_r($companies);
+print_r($companies);
 
 
 

@@ -45,6 +45,8 @@ $companies = [
     ]
 ];
 
+// SORT BY NUMBER OF EMPLOYEES AT COMPANY.
+
 foreach($companies as $company => $employee){
 
     $amount = count($employee);

@@ -43,4 +43,4 @@ function alternateCombineArrays($arrayOne, $arrayTwo){
 
 // echo combineArrays($names, $compare);
 
-echo properCombineArrays($names, $compare);
+echo alternateCombineArrays($names, $compare);

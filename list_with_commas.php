@@ -5,11 +5,18 @@ $physicistsString = 'Gordon Freeman, Samantha Carter, Sheldon Cooper, Quinn Mall
 
 $physicistsArray = explode(', ', $physicistsString);
 
-function humanizedList($physicistsArray){
+$alpha = ((bool) 1);
+$noaplha = ((bool) 0);
+
+function humanizedList($physicistsArray, $parameter){
+    if ($parameter){
+        asort($physicistsArray);
+    } else { 
+    }
     $lastScientist = array_pop($physicistsArray);
     $backToString = implode(', ', $physicistsArray);
     return 'Some of the most famous fictional theoretical physicists are '. $backToString. ', and '. $lastScientist;
 }
 
-echo humanizedList($physicistsArray);
+echo humanizedList($physicistsArray, $alpha);
 echo "\n"; 

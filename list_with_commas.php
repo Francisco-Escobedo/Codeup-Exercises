@@ -8,7 +8,7 @@ $physicistsArray = explode(', ', $physicistsString);
 $alpha = ((bool) 1);
 $noaplha = ((bool) 0);
 
-function humanizedList($physicistsArray, $parameter){
+function humanizedList($physicistsArray, $parameter=false){
     if ($parameter){
         asort($physicistsArray);
     } else { 
@@ -18,5 +18,5 @@ function humanizedList($physicistsArray, $parameter){
     return 'Some of the most famous fictional theoretical physicists are '. $backToString. ', and '. $lastScientist;
 }
 
-echo humanizedList($physicistsArray, $alpha);
+echo humanizedList($physicistsArray);
 echo "\n"; 

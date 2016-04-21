@@ -31,6 +31,7 @@ function combineArrays($arrayOne, $arrayTwo){
         }
     }
     print_r($arrayTwo);
+    return "===================\n";
 }
 
 function alternateCombineArrays($arrayOne, $arrayTwo){
@@ -39,23 +40,30 @@ function alternateCombineArrays($arrayOne, $arrayTwo){
     }
     $unique = array_unique($arrayTwo);
     print_r($unique);
+    return "===================\n";
 }
 
 function sameIndexCombineArrays($arrayOne, $arrayTwo){
+    $empty = []; 
      for ($i = 0; $i < count($arrayOne); $i++){
-        $arrayKey = key($arrayOne[$i])
-        for ($i = 0; $i < count($arrayTwo); $i++)
-            if ($arrayKey == key($arrayTwo[$i])){
-                
+        $arrayItemOne = $arrayOne[$i];
+        $arrayItemTwo =  $arrayTwo[$i];
+            if ($arrayItemTwo == $arrayItemOne){
+                array_push($empty, $arrayItemOne);
+            } else {
+                array_push($empty, $arrayItemOne);
+                array_push($empty, $arrayItemTwo);
             }
     }
-
+    print_r ($empty);
+    return "===================\n";
 }
 
-// echo combineArrays($names, $compare);
 
-// echo alternateCombineArrays($names, $compare);
+echo combineArrays($names, $compare);
 
-echo sameIndexCombineArrays ($names, $compare);
+echo alternateCombineArrays($names, $compare);
+
+echo sameIndexCombineArrays($names, $compare);
 
 

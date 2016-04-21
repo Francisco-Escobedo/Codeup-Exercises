@@ -41,6 +41,21 @@ function alternateCombineArrays($arrayOne, $arrayTwo){
     print_r($unique);
 }
 
+function sameIndexCombineArrays($arrayOne, $arrayTwo){
+     for ($i = 0; $i < count($arrayOne); $i++){
+        $arrayKey = key($arrayOne[$i])
+        for ($i = 0; $i < count($arrayTwo); $i++)
+            if ($arrayKey == key($arrayTwo[$i])){
+                
+            }
+    }
+
+}
+
 // echo combineArrays($names, $compare);
 
-echo alternateCombineArrays($names, $compare);
+// echo alternateCombineArrays($names, $compare);
+
+echo sameIndexCombineArrays ($names, $compare);
+
+

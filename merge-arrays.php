@@ -33,4 +33,14 @@ function combineArrays($arrayOne, $arrayTwo){
     print_r($arrayTwo);
 }
 
-echo combineArrays($names, $compare);
+function alternateCombineArrays($arrayOne, $arrayTwo){
+    for ($i = 0; $i < count($arrayOne); $i++){
+        array_push($arrayTwo, $arrayOne[$i]);
+    }
+    $unique = array_unique($arrayTwo);
+    print_r($unique);
+}
+
+// echo combineArrays($names, $compare);
+
+echo properCombineArrays($names, $compare);

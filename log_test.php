@@ -2,10 +2,6 @@
 
 require 'Log.php';
 
-$date = date("Y-m-d");
-
-$test = new Log();
-$test->filename = "log-$date.log";
-$test->logMessage('[TEST]', "This is a test message.");
-$test->info();
-$test->error();
+$test = new Log('cli');
+$test->info("This is an info message");
+$test->error("This is an error message");

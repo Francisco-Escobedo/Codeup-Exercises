@@ -11,3 +11,4 @@ require_once 'Square.php';
 
 $squa1 = new Square(5,5);
 echo $squa1->perimeter().PHP_EOL;
+echo $squa1->area().PHP_EOL;

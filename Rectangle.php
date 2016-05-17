@@ -19,7 +19,7 @@ class Rectangle
 
     public function perimeter()
     {
-        $perimeter=((($this->height)*2)+(($this->width)*2)))
+        $perimeter=((($this->height)*2)+(($this->width)*2));
         return $perimeter;
     }
 

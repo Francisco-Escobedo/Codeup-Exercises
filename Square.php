@@ -3,10 +3,10 @@
 class Square extends Rectangle
 {
 
-    public function perimeter()
+    public function __construct($height)
     {
-        $perimeter=(($this->height)*4);
-        return $perimeter;
+        $this->height = $height;
+        $this->width = $height;
     }
 
 }

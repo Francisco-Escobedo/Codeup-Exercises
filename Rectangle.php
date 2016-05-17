@@ -17,5 +17,11 @@ class Rectangle
         return $area;
     }
 
+    public function perimeter()
+    {
+        $perimeter=((($this->height)*2)+(($this->width)*2)))
+        return $perimeter;
+    }
+
 }
 
